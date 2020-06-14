@@ -36,7 +36,7 @@
             My name is Nicholas VanCise, currently I am a student at the
             University of Nevada Las Vegas and work as a contractor, where I am
             exploring automation and distributed back-end services supporting an
-            environment designed for real time distributed data ingestion tasks.
+            environment designed for real time data ingestion tasks.
           </p>
           <p>
             In addition to this, in my own time I dabble in iOS development,
@@ -497,7 +497,7 @@
                 />
               </a>
               <svg viewbox="0 0 128 128" width="80" height="80">
-                <a xlink:href="https://github.com/features">
+                <a xlink:href="https://github.com/thenick775">
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -566,18 +566,19 @@
                   between independant user programs orchestrated by Apache
                   Airflow that collect data, and multiple postgres database
                   connections. This API was built with golang, and utilizes GORM
-                  and Gorilla Mux for database operations and routing, and uses
-                  multipart data forms for data ingestion through http requests.
+                  and Gorilla Mux for database operations and routing, and can
+                  concurrently process multipart forms in bulk for data
+                  ingestion through http requests.
                 </p>
                 <h3>Airflow Docker Webscrapers</h3>
                 <p>
-                  I have built a variety of Docker containers that are run by
-                  Apache Airflow, where these containers scrape their specified
-                  webpage, and then send their data to the Ingestion API. Docker
-                  was used to isolate browser reliant code, and build reusable
-                  one-time use containers. The containers are designed to allow
-                  for fast and reliable setup, deployment, testing, tear down,
-                  and failure recovery.
+                  These Docker containers are run and orchestrated by an Apache
+                  Airflow cluster. They navigate and process data from their
+                  webpage/webpages, and send this data to the Ingestion API.
+                  Docker was used to isolate browser reliant code, and build
+                  reusable, language agnostic, one-time use containers. The
+                  containers are designed to allow for fast and reliable setup,
+                  deployment, testing, tear down, and failure recovery.
                 </p>
                 <h3>Ingestion Index Crawler</h3>
                 <p>
@@ -586,8 +587,9 @@
                   crawls all the pages of existing instances for a specified
                   user, and produces a list with each instances name, page
                   number, and status. This allows for fast searching and
-                  navigation using a built in grep utility, where the crawler
-                  was built using Docker and Selenium in python.
+                  navigation using the built in utility script. The crawler was
+                  built using Selenium in python and encapsulated in a docker
+                  container for easy deployment.
                 </p>
               </li>
             </div>
