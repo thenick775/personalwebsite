@@ -48,19 +48,19 @@ $(document).ready(function() {
       },
       line_linked: {
         enable: true,
-        distance: 200,
+        distance: 250,
         color: "#ffffff",
         opacity: 0.3,
         width: 1
       },
       move: {
         enable: true,
-        speed: 0.3,
+        speed: 0.2,
         direction: "none",
         random: false,
         straight: false,
-        out_mode: "out",
-        bounce: false,
+        out_mode: "bounce",
+        bounce: true,
         attract: {
           enable: false,
           rotateX: 600,
@@ -69,35 +69,35 @@ $(document).ready(function() {
       }
     },
     interactivity: {
-      detect_on: "canvas",
+      detect_on: "window",
       events: {
         onhover: {
-          enable: false,
+          enable: true,
           mode: "repulse"
         },
         onclick: {
-          enable: true,
-          mode: "push"
+          enable: false,
+          mode: "grab"
         },
-        resize: true
+        resize: false
       },
       modes: {
         grab: {
-          distance: 400,
+          distance: 10,
           line_linked: {
             opacity: 1
           }
         },
         bubble: {
-          distance: 600,
+          distance: 10,
           size: 80,
           duration: 2,
           opacity: 0.8,
           speed: 3
         },
         repulse: {
-          distance: 400,
-          duration: 0.4
+          distance: 80,
+          duration: 0.5
         },
         push: {
           particles_nb: 5
