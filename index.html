@@ -683,7 +683,8 @@
         <ul class="footerLinks">
           <li>
             <a
-              href="https://github.com/thenick775/resume_latex/blob/master/resume-5.pdf"
+              href="https://rawcdn.githack.com/thenick775/resume_latex/b34cb5a332330c57ffc74e65122e44879972ecad/resume-5.pdf"
+              onclick="return popup(this, 'resume')"
               >Resume</a
             >
           </li>
@@ -695,7 +696,7 @@
           <a href="https://github.com/VincentGarreau/particles.js/"
             >Particles.js</a
           >
-          &amp; <a href="http://getskeleton.com/">Skeleton.css</a>
+          &amp; <a href="https://raw.githack.com">raw.githack.com</a>
         </p>
       </div>
     </footer>
@@ -709,6 +710,16 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
     ></script>
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+      function popup(mylink, windowname) {
+        if (!window.focus) return true;
+        var href;
+        if (typeof mylink == "string") href = mylink;
+        else href = mylink.href;
+        window.open(href, windowname, "width=800,height=800,scrollbars=yes");
+        return false;
+      }
+    </script>
     <script type="text/javascript">
       (function(i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
