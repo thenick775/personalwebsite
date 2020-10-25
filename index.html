@@ -599,23 +599,25 @@
                   concurrently process multipart forms in bulk for data
                   ingestion through http requests.
                 </p>
-                <h3>Airflow Docker Webscrapers</h3>
+                <h3>Airflow Docker Webscraping Environment</h3>
                 <p>
-                  These Docker containers are run and orchestrated by an Apache
-                  Airflow cluster. They navigate and process data from their
-                  webpage(s)/data bucket, and send processed data to the Ingestion API.
-                  Docker was used to isolate browser reliant code, and build
-                  reusable, language agnostic, one-time use containers. The
-                  containers are designed to allow for fast and reliable setup,
-                  deployment, testing, tear down, and failure recovery.
+                  This environment consists of a distributed Apache Airflow
+                  Cluster, backed by Celery, that utilizes an array of custom
+                  docker containers to navigate and process data from public
+                  webpages and data buckets, and send this processed data to the
+                  Ingestion API. Docker was used to isolate browser reliant
+                  code, and build reusable, language agnostic, one-time use
+                  containers. The containers are designed to allow for fast and
+                  reliable setup, deployment, testing, tear down, cloning, and
+                  failure recovery.
                 </p>
                 <h3>Ingestion Index Crawler</h3>
                 <p>
                   This crawler is designed to reduce search times of already
                   ingested data for an in-house manual data ingestion system. It
                   crawls all the pages of existing instances for a specified
-                  user, and produces a list with each instances name, page
-                  number, and status. This allows for fast searching and
+                  user, and produces a list with the name, page number, and
+                  status of each instance. This allows for fast searching and
                   navigation using the built in utility script. The crawler was
                   built using Selenium in python and encapsulated in a docker
                   container for easy deployment.
@@ -640,9 +642,21 @@
                   short side scrolling platformer from scratch for iOS. This
                   project is written in Objective-C and utilizes features from
                   Spritekit, GameplayKit, AVAudioPlayer, and JSTileMap. I have
-                  written all of the event driven animation scheme, collission
+                  written all of the event driven animation scheme, collision
                   detection, character physics, data storage schemes, and game
                   logic.
+                </p>
+                <h3>
+                  <a href="https://github.com/thenick775/terbine_visualizations"
+                    >Visualizations of IoT Data</a
+                  >
+                </h3>
+                <p>
+                  These projects depict data from a multitude of physical
+                  sensors locaated around the world, sourced from Terbine. The
+                  interactive visualizations were constructed using Javascript,
+                  Jupyter-Notebooks, D3, Kepler.gl, and Leaflet, and are
+                  currently featured on the main company website.
                 </p>
                 <h3>
                   <a href="https://github.com/thenick775/Terbine-Map"
