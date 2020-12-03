@@ -22,7 +22,6 @@
     <meta name="description" content="Personal website of Nicholas VanCise" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-
   </head>
 
   <body>
@@ -785,18 +784,18 @@
                 <h3>Real-time Ingestion API</h3>
                 <p>
                   The Ingestion API is designed to function as the middle man
-                  between independant user programs orchestrated by Apache
+                  between independent user programs orchestrated by Apache
                   Airflow that collect data, and multiple postgres database
                   connections. This API was built with golang, and utilizes GORM
                   and Gorilla Mux for database operations and routing, and can
                   concurrently process multipart forms in bulk for data
                   ingestion through http requests.
                 </p>
-                <h3>Airflow Docker Webscraping Environment</h3>
+                <h3>Airflow Ingestion Cluster</h3>
                 <p>
                   This environment consists of a distributed Apache Airflow
                   Cluster, backed by Celery, that utilizes an array of custom
-                  docker containers to navigate and process data from public
+                  docker containers to fetch and process data from public
                   webpages and data buckets, and send this processed data to the
                   Ingestion API. Docker was used to isolate browser reliant
                   code, and build reusable, language agnostic, one-time use
@@ -826,6 +825,23 @@
               <h5>(Click the names for github links!)</h5>
               <li style="list-style: none;">
                 <h3>
+                  <a
+                    href="https://github.com/thenick775/Quorum_iOS_Transpiliation"
+                    >Quorum iOS Transpilation</a
+                  >
+                </h3>
+                <p>
+                  This project was done as part of my senior design, where the
+                  goal was to reintegrate RoboVM into the Quorum toolchain in a
+                  streamlined and encapsulated manner. This was successful,
+                  where gradle was used to package the process, cmake and xcode
+                  were used to compile C/C++/Objective-C natives, and the MobiVM
+                  RoboVM compiler was used for source code transpilation. This allows for
+                  Quorum applications to be run on iOS devices, apealing to the
+                  needs of the existing user base, while providing greater reach
+                  in an area where Quorum is needed the most!
+                </p>
+                <h3>
                   <a href="https://github.com/thenick775/metroidvaniafangame"
                     >Metroidvania</a
                   >
@@ -845,12 +861,14 @@
                   >
                 </h3>
                 <p>
-                  These projects depict data from a multitude of physical
-                  sensors located around the world, sourced from Terbine. The
-                  interactive visualizations were constructed using Javascript,
-                  Jupyter-Notebooks, D3, Kepler.gl, and Leaflet, and are
-                  currently featured on the main company website.
+                  These projects are an interactive way to view and analyze data
+                  from a multitude of physical sensors located around the world,
+                  sourced from Terbine. The indivudual visualizations were
+                  constructed using Javascript, Jupyter-Notebooks, D3,
+                  Kepler.gl, and Leaflet, where they are currently featured on
+                  the main company website.
                 </p>
+
                 <h3>
                   <a href="https://github.com/thenick775/Terbine-Map"
                     >Terbine World Map Visualization</a
@@ -896,7 +914,7 @@
         <ul class="footerLinks">
           <li>
             <a
-              href="https://rawcdn.githack.com/thenick775/resume_latex/29d87e2399b626a1db4956d2e44645788d81db85/resume.pdf"
+              href="https://rawcdn.githack.com/thenick775/resume_latex/52ae4c68c9a201f3fe3270f17bd6740d049c1623/resume.pdf"
               onclick="return popup(this, 'resume')"
               >Resume</a
             >
@@ -959,3 +977,4 @@
     </script>
   </body>
 </html>
+
